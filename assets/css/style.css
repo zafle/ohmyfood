@@ -48,10 +48,23 @@ img {
   display: block;
 }
 
+/* ####### GENERAL ####### */
+html {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
 /* ####### HEADER ####### */
 .main-header {
-  padding-top: 0.875rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 22px;
+  padding-bottom: 13px;
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 9999;
 }
 .main-header__logo {
   width: 10.125rem;
@@ -59,5 +72,21 @@ img {
 }
 
 /* ####### homepage header ####### */
+/* ####### LOCATIONS ####### */
+.location {
+  padding: 15.5px;
+  color: #353535;
+  background: #EAEAEA;
+  text-align: center;
+  -ms-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.location__text {
+  font-weight: 500;
+  margin-left: 17px;
+}
 
 /*# sourceMappingURL=style.css.map */

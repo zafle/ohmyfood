@@ -1,7 +1,10 @@
 /* ####### HEADER ####### */
 .main-header {
-    padding-top: rem(14);
-    padding-bottom: rem(5);
+    padding-top: 22px;
+    padding-bottom: 13px;
+    @include shadow-light;
+    position: relative;
+    z-index: 9999;
 
     &__logo {
         width: rem(162);

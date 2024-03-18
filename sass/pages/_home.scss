@@ -1,0 +1,14 @@
+/* ####### LOCATIONS ####### */
+
+.location {
+    padding: 15.5px;
+    color: $contrast-heavy;
+    background: $background-medium;
+    text-align: center;
+    @include shadow-medium;
+
+    &__text {
+        font-weight: $medium-weight;
+        margin-left: 17px;
+    }
+}
