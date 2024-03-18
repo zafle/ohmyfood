@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.png">
     <title>ohmyfood</title>
@@ -14,10 +14,56 @@
 <body>
     <div class="main-container">
         <header>
-            <section>
+            <img src="assets/images/logo/ohmyfood.png" alt="logo ohmyfood">
+        </header>
+        <main>
+            <section class="location">
+                <i class="fas fa-map-marker-alt location__icon"></i>
+                <span class="location__text">Paris, Belleville</span>
+            </section>
+            <section class="introduction">
+                <h1 class="introduction__title">Réservez le menu qui vous convient</h1>
+                <p class="introduction__text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+                <a href="#restaurants__section" target="_self" title="Aller à la section restaurants">
+                    <button class="introduction__button">Explorer nos restaurants</button>
+                </a>
+            </section>
+            <section class="instructions">
+                <h2 class="instructions__title">Fonctionnement</h2>
+                <ul class="instructions__list">
+                    <li class="instructions__item">
+                        <span class="instructions__number">1</span>
+                        <i class="fas fa-mobile-alt instructions__icon"></i>
+                        <p class="instructions__text">Choisissez un restaurant</p>
+                    </li>
+                    <li class="instructions__item">
+                        <span class="instructions__number">2</span>
+                        <i class="fas fa-list-ul instructions__icon"></i>
+                        <p class="instructions__text">Composez votre menu</p>
+                    </li>
+                    <li class="instructions__item">
+                        <span class="instructions__number">3</span>
+                        <i class="fas fa-store instructions__icon"></i>
+                        <p class="instructions__text">Dégustez au restaurant</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="restaurants__section" class="restaurants">
+                <article class="restaurant">
+                    <a href="" class="restaurant__content">
+                        <img class="restaurant__image" src="assets/images/restaurant/la-palette-du-gout_small.jpg" alt="Photo d'un plat gastronomique servi au restaurant">
+                        <h3 class="restaurant__title">La palette du goût</h3>
+                        <p class="restaurant__text">Ménilmontant</p>
+                        <p class="restaurant__notification restaurant__notification--on">Nouveau</p>
+                    </a>
+                    <div class="restaurant__favorite">
+                        <i class="fas fa-heart restaurant__selection restaurant__selection--colored"></i>
+                        <i class="far fa-heart restaurant__selection"></i>
+                    </div>
+                </article>
 
             </section>
-        </header>
+        </main>
     </div>
 
 </body>
