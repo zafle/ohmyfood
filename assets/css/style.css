@@ -43,4 +43,21 @@ td, th {
   padding: 0;
 }
 
+/* ####### Extra reset rules ####### */
+img {
+  display: block;
+}
+
+/* ####### HEADER ####### */
+.main-header {
+  padding-top: 0.875rem;
+  padding-bottom: 0.3125rem;
+}
+.main-header__logo {
+  width: 10.125rem;
+  margin: 0 auto;
+}
+
+/* ####### homepage header ####### */
+
 /*# sourceMappingURL=style.css.map */
