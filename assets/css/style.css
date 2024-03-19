@@ -174,13 +174,13 @@ html, body {
 .restaurants__card {
   position: relative;
   width: 100%;
-  max-width: 640px;
+  max-width: 490px;
 }
 .restaurants__image {
   height: 10.625rem;
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 58%;
   border-radius: 15px 15px 0 0;
 }
 .restaurants__content {
@@ -211,6 +211,9 @@ html, body {
   font-weight: 500;
   margin: 15px;
   border-radius: 2px;
+}
+.restaurants__notification--off {
+  display: none;
 }
 .restaurants__favorite {
   position: absolute;
