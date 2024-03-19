@@ -8,6 +8,6 @@
 
     &__logo {
         width: rem(162);
-        margin: 0 auto;
+        @extend %margin-center;
     }
 }

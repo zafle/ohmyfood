@@ -24,3 +24,19 @@
 @mixin shadow-manual {
     @include vendor(box-shadow, 0 4px 15px rgba(0, 0, 0, .15));
 }
+
+// FLEX
+// set row-gap
+@mixin flex-column($r-gap) {
+    display: flex;
+    flex-direction: column;
+    row-gap: $r-gap;
+}
+
+// set column-gap and row-gap
+@mixin flex-row($c-gap, $r-gap) {
+    display: flex;
+    flex-direction: row;
+    column-gap: $c-gap;
+    row-gap: $r-gap;
+}

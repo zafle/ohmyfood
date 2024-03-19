@@ -2,6 +2,10 @@
   background: #F6F6F6;
 }
 
+.restaurants__card, .manual__item, .main-header__logo {
+  margin: 0 auto;
+}
+
 .introduction, .manual, .restaurants {
   padding: 40px 20px 60px 20px;
 }
@@ -56,6 +60,11 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ####### GENERAL ####### */
 html, body {
   font-family: "Roboto";
@@ -84,7 +93,6 @@ html, body {
 }
 .main-header__logo {
   width: 10.125rem;
-  margin: 0 auto;
 }
 
 /* button */
@@ -114,19 +122,18 @@ html, body {
   row-gap: 25px;
 }
 .manual__item {
-  background-color: #F6F6F6;
   -ms-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   -o-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: #F6F6F6;
   border-radius: 20px;
   height: 4.5rem;
   width: 100%;
   max-width: 322px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
   padding: 0 28px;
   position: relative;
 }
@@ -155,6 +162,65 @@ html, body {
 .manual__text {
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* ######## RESTAURANTS CARDS ######## */
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  margin-top: 25px;
+}
+.restaurants__card {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+}
+.restaurants__image {
+  height: 10.625rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants__content {
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  padding: 15px;
+}
+.restaurants__name {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.restaurants__place {
+  font-size: 1.0625rem;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.restaurants__notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 1.875rem;
+  line-height: 2rem;
+  background-color: #99E2D0;
+  color: #008766;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 15px;
+  border-radius: 2px;
+}
+.restaurants__favorite {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 33px 25px;
+  width: 1.375rem;
+}
+.restaurants__favorite--off {
+  opacity: 0;
 }
 
 /* ####### LOCATIONS ####### */
