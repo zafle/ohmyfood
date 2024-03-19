@@ -16,7 +16,7 @@
         <header class="main-header">
             <img class="main-header__logo" src="assets/images/logo/ohmyfood.png" alt="logo ohmyfood">
         </header>
-        <main>
+        <main class="home-main">
             <section class="location">
                 <i class="fas fa-map-marker-alt location__icon"></i>
                 <span class="location__text">Paris, Belleville</span>
@@ -25,42 +25,45 @@
                 <h1 class="introduction__title">Réservez le menu qui vous convient</h1>
                 <p class="introduction__text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
                 <a href="#restaurants__section" target="_self" title="Aller à la section restaurants">
-                    <button class="introduction__button">Explorer nos restaurants</button>
+                    <button class="introduction__button btn">Explorer nos restaurants</button>
                 </a>
             </section>
-            <section class="instructions">
-                <h2 class="instructions__title">Fonctionnement</h2>
-                <ul class="instructions__list">
-                    <li class="instructions__item">
-                        <span class="instructions__number">1</span>
-                        <i class="fas fa-mobile-alt instructions__icon"></i>
-                        <p class="instructions__text">Choisissez un restaurant</p>
+            <section class="manual">
+                <h2 class="manual__title">Fonctionnement</h2>
+                <ul class="manual__list">
+                    <li class="manual__item">
+                        <span class="manual__number">1</span>
+                        <i class="fas fa-mobile-alt fa-fw manual__icon"></i>
+                        <p class="manual__text">Choisissez un restaurant</p>
                     </li>
-                    <li class="instructions__item">
-                        <span class="instructions__number">2</span>
-                        <i class="fas fa-list-ul instructions__icon"></i>
-                        <p class="instructions__text">Composez votre menu</p>
+                    <li class="manual__item">
+                        <span class="manual__number">2</span>
+                        <i class="fas fa-list-ul fa-fw manual__icon"></i>
+                        <p class="manual__text">Composez votre menu</p>
                     </li>
-                    <li class="instructions__item">
-                        <span class="instructions__number">3</span>
-                        <i class="fas fa-store instructions__icon instructions__icon--colored"></i>
-                        <p class="instructions__text">Dégustez au restaurant</p>
+                    <li class="manual__item">
+                        <span class="manual__number">3</span>
+                        <i class="fas fa-store fa-fw manual__icon manual__icon--colored"></i>
+                        <p class="manual__text">Dégustez au restaurant</p>
                     </li>
                 </ul>
             </section>
             <section id="restaurants__section" class="restaurants">
-                <article class="restaurant">
-                    <a href="restaurants/la-palette-du-gout.html" class="restaurant__content">
-                        <img class="restaurant__image" src="assets/images/restaurant/la-palette-du-gout_small.jpg" alt="Photo d'un plat gastronomique servi au restaurant">
-                        <h3 class="restaurant__title">La palette du goût</h3>
-                        <p class="restaurant__text">Ménilmontant</p>
-                        <p class="restaurant__notification restaurant__notification--on">Nouveau</p>
-                    </a>
-                    <div class="restaurant__favorite">
-                        <i class="fas fa-heart restaurant__selection restaurant__selection--colored"></i>
-                        <i class="far fa-heart restaurant__selection"></i>
-                    </div>
-                </article>
+                <h2 class="restaurants__title">Restaurants</h2>
+                <div class="restaurants__cards">
+                    <article class="restaurant-card">
+                        <a href="restaurants/la-palette-du-gout.html" class="restaurant-card__content">
+                            <img class="restaurant-card__image" src="assets/images/restaurant/la-palette-du-gout_small.jpg" alt="Photo d'un plat gastronomique servi au restaurant">
+                            <h3 class="restaurant-card__title">La palette du goût</h3>
+                            <p class="restaurant-card__text">Ménilmontant</p>
+                            <p class="restaurant-card__notification restaurant-card__notification--on">Nouveau</p>
+                        </a>
+                        <div class="restaurant__favorite">
+                            <i class="fas fa-heart restaurant-card__selection restaurant-card__selection--colored"></i>
+                            <i class="far fa-heart restaurant-card__selection"></i>
+                        </div>
+                    </article>
+                </div>
 
             </section>
         </main>

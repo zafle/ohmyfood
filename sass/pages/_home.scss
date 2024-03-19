@@ -6,9 +6,35 @@
     background: $background-medium;
     text-align: center;
     @include shadow-medium;
+    z-index: 2;
+    position: relative;
 
     &__text {
         font-weight: $medium-weight;
         margin-left: 17px;
+    }
+}
+
+/* ####### INTRODUCTION /MANUAL / RESTAURANTS ####### */
+
+.introduction, .manual, .restaurants {
+    @extend %homesection;
+}
+.introduction, .restaurants {
+    @extend %background-light;
+}
+
+/* ####### INTRODUCTION ####### */
+.introduction  {
+    text-align: center;
+
+    &__title {
+        padding: 0 30px;
+    }
+
+    &__text {
+        font-size: rem(18);
+        font-weight: $light-weight;
+        margin-top: 20px;
     }
 }

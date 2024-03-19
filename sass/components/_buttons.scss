@@ -1,0 +1,14 @@
+/* button */
+.btn {
+    width: rem(218);
+    height: rem(50);
+    background: $button-gradient;
+    color: white;
+    font-weight: $medium-weight;
+    line-height: rem(50);
+    border: none;
+    border-radius: 25px;
+    font-size: rem(16);
+    margin-top: 30px;
+    @include shadow-button;
+}

@@ -4,12 +4,10 @@
     padding-bottom: 13px;
     @include shadow-light;
     position: relative;
-    z-index: 9999;
+    z-index: 3;
 
     &__logo {
         width: rem(162);
         margin: 0 auto;
     }
 }
-
-/* ####### homepage header ####### */

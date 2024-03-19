@@ -1,15 +1,8 @@
-// ####### TYPOGRAPHY #######
+/* ####### Homepage ####### */
 
-// ####### Font-families #######
-$base-font: "Roboto";
-$deco-font: "Shrikhand";
-
-// ####### Font-size #######
-// Base font-size in pixels
-$base-font-size: 16px;
-
-// ####### Font-weights #######
-$light-weight: 300;
-$regular-weight: 400;
-$medium-weight: 500;
-$bold-weight: 700;
+/* Titles*/
+.home-main h1,
+.home-main h2 {
+    font-size: rem(24);
+    font-weight: $bold-weight;
+}
