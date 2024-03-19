@@ -1,0 +1,27 @@
+/* ####### FOOTER ####### */
+.footer {
+    background-color: $contrast-heavy;
+    padding: 22px 25px;
+    color: white;
+
+    &__title {
+        font-family: "Shrikhand";
+        font-size: rem(18);
+    }
+
+    &__menu {
+        margin-top: 16px;
+        font-size: rem(16);
+        font-weight: $medium-weight;
+    }
+
+    &__menu-item {
+        margin-top: 7px;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        width: 25px;
+        text-align: center;
+    }
+}
