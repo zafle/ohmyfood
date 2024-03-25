@@ -1,28 +1,27 @@
-// PREFIX VENDORS
-@mixin vendor($property, $values) {
-    -ms-#{$property}: $values;
-    -webkit-#{$property}: $values;
-    -o-#{$property}: $values;
-    -moz-#{$property}: $values;
-    #{$property}: $values;
-}
-
 // SHADOWS
 
+@mixin box-shadow($x, $y, $blur, $transparency) {
+    box-shadow: #{$x}px #{$y}px #{$blur}px rgba(0, 0, 0, $transparency);
+}
+
 @mixin shadow-light {
-    @include vendor(box-shadow, 0 2px 4px rgba(0, 0, 0, .15));
+    @include box-shadow(0, 2, 4, .15);
 }
 
 @mixin shadow-medium {
-    @include vendor(box-shadow, 0 4px 4px rgba(0, 0, 0, .25));
+    @include box-shadow(0, 4, 4, .25);
 }
 
 @mixin shadow-button {
-    @include vendor(box-shadow, 0 4px 10px rgba(0, 0, 0, .25));
+    @include box-shadow(0, 4, 10, .25);
+}
+
+@mixin shadow-button-hover {
+    @include box-shadow(0, 4, 15, .35);
 }
 
 @mixin shadow-manual {
-    @include vendor(box-shadow, 0 4px 15px rgba(0, 0, 0, .15));
+    @include box-shadow(0, 4, 15, .15);
 }
 
 // FLEX

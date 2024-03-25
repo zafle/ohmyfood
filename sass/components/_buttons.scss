@@ -11,4 +11,7 @@
     font-size: rem(16);
     margin-top: 30px;
     @include shadow-button;
+    cursor: pointer;
+    // transition: all 300ms reverse;
+    position: relative;
 }
