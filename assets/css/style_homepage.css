@@ -99,19 +99,19 @@ html, body {
 }
 
 /* "Like" animation */
-.restaurants__like {
+.like__icon {
   transition: opacity 500ms ease-in;
 }
-.restaurants__checkbox:checked + .restaurants__favorite .restaurants__like--filled {
+.like__checkbox:checked + .like__favorite .like__icon--filled {
   opacity: 1;
 }
-.restaurants__checkbox:checked + .restaurants__favorite .restaurants__like--empty {
+.like__checkbox:checked + .like__favorite .like__icon--empty {
   opacity: 0;
 }
-.restaurants__checkbox:not(:checked) + .restaurants__favorite .restaurants__like--filled {
+.like__checkbox:not(:checked) + .like__favorite .like__icon--filled {
   opacity: 0;
 }
-.restaurants__checkbox:not(:checked) + .restaurants__favorite .restaurants__like--empty {
+.like__checkbox:not(:checked) + .like__favorite .like__icon--empty {
   opacity: 1;
 }
 
@@ -253,25 +253,9 @@ html, body {
   font-weight: 300;
   margin-top: 5px;
 }
-.restaurants__icon {
+.restaurants__like {
   margin-top: 8px;
   margin-right: 13px;
-}
-.restaurants__checkbox {
-  display: none;
-}
-.restaurants__favorite {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-.restaurants__like--filled {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0;
 }
 .restaurants__notification {
   position: absolute;
@@ -290,6 +274,24 @@ html, body {
 }
 .restaurants__notification--off {
   display: none;
+}
+
+/* like icon */
+.like__checkbox {
+  display: none;
+}
+.like__favorite {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.like__icon--filled {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
 }
 
 /* ####### LOCATIONS ####### */

@@ -40,28 +40,9 @@
         margin-top: 5px;
     }
 
-    &__icon {
+    &__like {
         margin-top: 8px;
         margin-right: 13px;
-    }
-
-    &__checkbox {
-        display: none;
-    }
-
-    &__favorite {
-        position: relative;
-        display: block;
-        cursor: pointer;
-    }
-
-    &__like--filled {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        opacity: 0;
     }
 
     &__notification {

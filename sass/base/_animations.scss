@@ -24,13 +24,13 @@
 
 /* "Like" animation */
 
-.restaurants {
+.like {
 
-    &__like {
+    &__icon {
         transition: opacity 500ms ease-in;
     }
 
-    &__checkbox:checked + &__favorite &__like{
+    &__checkbox:checked + &__favorite &__icon{
 
         &--filled {
             opacity: 1;
@@ -41,7 +41,7 @@
         }
     }
 
-    &__checkbox:not(:checked) + &__favorite &__like{
+    &__checkbox:not(:checked) + &__favorite &__icon{
 
         &--filled {
             opacity: 0;
