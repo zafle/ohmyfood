@@ -263,6 +263,7 @@ html, body {
 .restaurants__favorite {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 .restaurants__like--filled {
   position: absolute;
