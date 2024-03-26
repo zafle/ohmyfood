@@ -230,14 +230,17 @@ html, body {
 .restaurants__image {
   height: 10.625rem;
   width: 100%;
-  object-fit: cover;
-  object-position: 50% 58%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 58%;
+     object-position: 50% 58%;
   border-radius: 15px 15px 0 0;
 }
 .restaurants__content {
   display: flex;
   flex-direction: row;
-  column-gap: 0;
+  -moz-column-gap: 0;
+       column-gap: 0;
   row-gap: 0;
   justify-content: space-between;
   background-color: white;
@@ -318,5 +321,3 @@ html, body {
   font-weight: 300;
   margin-top: 20px;
 }
-
-/*# sourceMappingURL=style_homepage.css.map */

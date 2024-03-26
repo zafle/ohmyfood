@@ -1,4 +1,4 @@
-// SASS files import for home page
+// SASS files import for restaurants pages
 
 @import 'abstracts/variables';
 @import 'abstracts/functions';
@@ -14,14 +14,15 @@
 
 @import 'layout/navigation';
 @import 'layout/header';
+@import 'layout/header-restaurant';
 @import 'layout/footer';
 
-@import 'components/loader';
+// @import 'components/loader';
 // @import 'components/cards';
-// @import 'components/menus';
+@import 'components/menus';
 @import 'components/buttons';
-@import 'components/manual';
-@import 'components/restaurants-card';
+// @import 'components/manual';
+// @import 'components/restaurants-card';
 
-@import 'pages/home';
-// @import 'pages/restaurant';
+// @import 'pages/home';
+@import 'pages/restaurant';

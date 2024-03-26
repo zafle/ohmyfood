@@ -1,0 +1,9 @@
+// SASS for restaurants pages
+
+.page-hero {
+    &__image {
+        height: rem(275);
+        object-fit: cover;
+        width: 100%;
+    }
+}
