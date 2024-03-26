@@ -56,7 +56,7 @@ td, th {
 }
 
 /* ####### Extra reset rules ####### */
-img {
+img, picture {
   display: block;
 }
 
@@ -230,17 +230,14 @@ html, body {
 .restaurants__image {
   height: 10.625rem;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 58%;
-     object-position: 50% 58%;
+  object-fit: cover;
+  object-position: 50% 58%;
   border-radius: 15px 15px 0 0;
 }
 .restaurants__content {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 0;
-       column-gap: 0;
+  column-gap: 0;
   row-gap: 0;
   justify-content: space-between;
   background-color: white;
@@ -265,6 +262,7 @@ html, body {
 }
 .restaurants__favorite {
   position: relative;
+  display: block;
 }
 .restaurants__like--filled {
   position: absolute;
@@ -321,3 +319,5 @@ html, body {
   font-weight: 300;
   margin-top: 20px;
 }
+
+/*# sourceMappingURL=style_homepage.css.map */
