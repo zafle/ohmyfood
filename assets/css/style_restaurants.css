@@ -1,4 +1,8 @@
 .restaurant-menu {
+  padding: 32px 13px 40px 13px;
+}
+
+.restaurant-menu {
   background: #F6F6F6;
 }
 
@@ -10,10 +14,6 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-
-.restaurant-menu {
-  padding: 32px 13px 40px 13px;
 }
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -89,6 +89,15 @@ html, body {
 .main-header__logo {
   width: 10.125rem;
 }
+@media only screen and (min-width: 1024px) {
+  .main-header {
+    padding: 30px;
+    box-shadow: none;
+  }
+  .main-header__logo {
+    width: 12.5rem;
+  }
+}
 
 /* ####### HEADER ####### */
 .main-header--restaurant {
@@ -115,17 +124,48 @@ html, body {
   font-size: 1.125rem;
 }
 .footer__menu {
-  margin-top: 16px;
   font-size: 1rem;
+}
+.footer__menu--1 {
+  margin-top: 16px;
+}
+.footer__menu--1 .footer__menu-item {
   font-weight: 500;
 }
 .footer__menu-item {
   margin-top: 7px;
 }
 .footer__icon {
-  margin-right: 10px;
-  width: 25px;
+  width: 23px;
   text-align: center;
+  font-size: 0.8125rem;
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    row-gap: 0;
+    justify-content: flex-end;
+    padding: 55px 55px 30px 55px;
+  }
+  .footer__title {
+    order: 2;
+    margin-left: 40px;
+  }
+  .footer__menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 0;
+  }
+  .footer__menu--1 {
+    order: 0;
+    margin-top: 0;
+  }
+  .footer__menu--2 {
+    order: 1;
+  }
 }
 
 /* ####### MENU ANIMATION ####### */

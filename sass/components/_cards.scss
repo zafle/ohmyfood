@@ -1,0 +1,81 @@
+/* ######## RESTAURANTS CARDS ######## */
+.restaurants {
+
+    &__cards {
+        @include flex-column(18px);
+        margin-top: 25px;
+
+        @media #{$medium-screen} {
+            @include flex-row(50px, 50px);
+            flex-wrap: wrap;
+        }
+
+        @media #{$large-screen} {
+            @include max-width-large;
+        }
+    }
+
+    &__card {
+        @include div-center;
+        position: relative;
+        width: 100%;
+        max-width: 490px;
+
+        @media #{$medium-screen} {
+            min-width: 340px;
+            flex: 1 1 0px;
+        }
+    }
+
+    &__image {
+        height: rem(170);
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 58%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    &__content {
+        @include flex-row(0, 0);
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 0 0 15px 15px;
+        padding: 15px;
+    }
+
+    &__name {
+        font-size: rem(18);
+        font-weight: $bold-weight;
+    }
+
+    &__place {
+        font-size: rem(17);
+        font-weight: $light-weight;
+        margin-top: 5px;
+    }
+
+    &__like {
+        margin-top: 8px;
+        margin-right: 13px;
+    }
+
+    &__notification {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: rem(80);
+        height: rem(30);
+        line-height: rem(32);
+        background-color: $secondary-light;
+        color: $secondary;
+        text-align: center;
+        font-size: rem(14);
+        font-weight: $medium-weight;
+        margin: 15px;
+        border-radius: 2px;
+
+        &--off {
+            display: none;
+        }
+    }
+}

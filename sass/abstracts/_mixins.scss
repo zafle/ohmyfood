@@ -43,3 +43,17 @@
     column-gap: $c-gap;
     row-gap: $r-gap;
 }
+
+// DIV CENTER
+
+@mixin div-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// MAX WIDTH
+
+@mixin max-width-large {
+    max-width: 1055px;
+    @include div-center;
+}

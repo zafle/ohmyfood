@@ -8,6 +8,22 @@ h1, h2 {
     font-weight: $bold-weight;
 }
 
+@media #{$medium-screen} {
+    h1 {
+        font-size: rem(30);
+    }
+}
+
+@media #{$large-screen} {
+    h1 {
+        font-size: rem(40);
+    }
+
+    h2 {
+        @include max-width-large;
+    }
+}
+
 /* ####### LOCATIONS ####### */
 
 .location {
@@ -23,12 +39,34 @@ h1, h2 {
         font-weight: $medium-weight;
         margin-left: 17px;
     }
+
+    @media #{$large-screen} {
+        box-shadow: none;
+    }
 }
 
 /* ####### INTRODUCTION / MANUAL / RESTAURANTS ####### */
 
 .introduction, .manual, .restaurants {
-    @extend %homesection;
+    padding: 40px 20px 60px 20px;
+}
+
+@media #{$large-screen} {
+    .introduction, .restaurant {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .manual {
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+        &__list {
+            @include max-width-large;
+            @include flex-row(24px, 0);
+            justify-content: center;
+        }
+    }
+
 }
 .introduction, .restaurants {
     @extend %background-light;

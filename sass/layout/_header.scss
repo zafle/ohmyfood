@@ -10,4 +10,13 @@
         width: rem(162);
         @extend %margin-center;
     }
+
+    @media #{$large-screen} {
+        padding: 30px;
+        box-shadow: none;
+
+        &__logo {
+            width: rem(200);
+        }
+    }
 }
