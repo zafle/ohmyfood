@@ -290,6 +290,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   height: 4.375rem;
+  cursor: pointer;
 }
 .restaurant-menu__text {
   padding: 13px 15px;
