@@ -13,4 +13,10 @@
     &__checkbox:not(:checked) + &__label &__info {
             margin-right: -60px;
     }
+
+    @media #{$medium-screen} {
+        &__label:hover &__info {
+            margin-right: 0 !important;
+        }
+    }
 }

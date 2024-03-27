@@ -13,19 +13,12 @@
     font-size: rem(16);
     @include shadow-button;
     cursor: pointer;
-    // transition: all 300ms reverse;
     position: relative;
 }
 
 /* ####### Button animation ######## */
 
 .btn {
-    &:active {
-        &::after {
-            @include shadow-button-hover;
-            opacity: .15;
-        }
-    }
 
     &::after {
         content: '';
@@ -37,6 +30,13 @@
         background-color: white;
         opacity: 0;
         border-radius: 25px;
-        transition: opacity 300ms;
+        @include shadow-button-hover;
+        transition: opacity 300ms ease-in;
+    }
+
+    &:active, &:hover {
+        &::after {
+            opacity: .15;
+        }
     }
 }

@@ -27,7 +27,7 @@
 .like {
 
     &__icon {
-        transition: opacity 500ms ease-in;
+        transition: opacity 400ms ease-in;
     }
 
     &__checkbox:checked + &__favorite &__icon{
@@ -49,6 +49,19 @@
 
         &--empty {
             opacity: 1;
+        }
+    }
+}
+
+@media #{$medium-screen} {
+
+    .like:hover {
+
+        .like__icon--filled {
+            opacity: 1 !important;
+        }
+        .like__icon--empty {
+            opacity: 0 !important;
         }
     }
 }
