@@ -1,5 +1,7 @@
 /* ####### BUTTON ####### */
 .btn {
+    display: block;
+    @extend %margin-center;
     width: rem(218);
     height: rem(50);
     background: $button-gradient;
@@ -9,7 +11,7 @@
     border: none;
     border-radius: 25px;
     font-size: rem(16);
-    margin-top: 30px;
+    // margin-top: 30px;
     @include shadow-button;
     cursor: pointer;
     // transition: all 300ms reverse;

@@ -2,7 +2,7 @@
   background: #F6F6F6;
 }
 
-.restaurants__card, .manual__item, .main-header__logo {
+.introduction__link, .restaurants__card, .manual__item, .btn, .main-header__logo {
   margin: 0 auto;
 }
 
@@ -110,6 +110,7 @@ html, body {
 
 /* ####### BUTTON ####### */
 .btn {
+  display: block;
   width: 13.625rem;
   height: 3.125rem;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -119,7 +120,6 @@ html, body {
   border: none;
   border-radius: 25px;
   font-size: 1rem;
-  margin-top: 30px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   position: relative;
@@ -320,6 +320,11 @@ h1, h2 {
   font-size: 1.125rem;
   font-weight: 300;
   margin-top: 20px;
+  margin-bottom: 30px;
+}
+.introduction__link {
+  width: fit-content;
+  display: block;
 }
 
 /*# sourceMappingURL=style_homepage.css.map */

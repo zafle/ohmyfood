@@ -2,7 +2,7 @@
   background: #F6F6F6;
 }
 
-.restaurant-menu__service, .restaurant-menu__header, .main-header__logo {
+.restaurant-menu__service, .restaurant-menu__header, .btn, .main-header__logo {
   margin: 0 auto;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .restaurant-menu {
-  padding: 32px 13px 0 13px;
+  padding: 32px 13px 40px 13px;
 }
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -141,6 +141,7 @@ html, body {
 
 /* ####### BUTTON ####### */
 .btn {
+  display: block;
   width: 13.625rem;
   height: 3.125rem;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -150,7 +151,6 @@ html, body {
   border: none;
   border-radius: 25px;
   font-size: 1rem;
-  margin-top: 30px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   position: relative;
@@ -272,6 +272,9 @@ html, body {
 .restaurant-menu__service {
   margin-top: 40px;
   max-width: 635px;
+}
+.restaurant-menu__service:last-of-type {
+  margin-bottom: 40px;
 }
 .restaurant-menu__item {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);

@@ -87,6 +87,10 @@
         margin-top: 40px;
         @extend %margin-center;
         max-width: 635px;
+
+        &:last-of-type {
+            margin-bottom: 40px;
+        }
     }
 
     &__item {

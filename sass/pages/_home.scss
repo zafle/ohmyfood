@@ -46,5 +46,12 @@ h1, h2 {
         font-size: rem(18);
         font-weight: $light-weight;
         margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        width: fit-content;
+        display: block;
+        @extend %margin-center;
     }
 }
