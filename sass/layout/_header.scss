@@ -2,13 +2,13 @@
 .main-header {
     padding-top: 22px;
     padding-bottom: 13px;
-    @include shadow-light;
+    @include box-shadow(0, 2, 4, .15);
     position: relative;
     z-index: 3;
 
     &__logo {
         width: rem(162);
-        @extend %margin-center;
+        @include div-center;
     }
 
     @media #{$large-screen} {

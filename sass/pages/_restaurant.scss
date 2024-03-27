@@ -7,7 +7,7 @@
     // h1
     &__title-restaurant {
         font-size: rem(28);
-        font-family: shrikhand;
+        font-family: 'shrikhand';
     }
 
     // h2
@@ -52,6 +52,11 @@
         height: rem(275);
         object-fit: cover;
         width: 100%;
+
+        @media #{$medium-screen} {
+            height: rem(385);
+            object-position: 50% 60%;
+        }
     }
 }
 
@@ -60,14 +65,19 @@
 .restaurant-menu {
     position: relative;
     @extend %background-light;
-    @extend %menusection;
+    padding: 32px 13px 40px 13px;
     margin-top: -55px;
     border-radius: 40px 40px 0 0;
     overflow: hidden;
 
+    @media #{$medium-screen} {
+        @include max-width-large;
+        margin-top: -40px;
+    }
+
     &__header {
         display: flex;
-        @extend %margin-center;
+        @include div-center;
         justify-content: space-between;
         align-items: center;
         max-width: 340px;
@@ -85,7 +95,7 @@
 
     &__service {
         margin-top: 40px;
-        @extend %margin-center;
+        @include div-center;
         max-width: 635px;
 
         &:last-of-type {
@@ -94,7 +104,7 @@
     }
 
     &__item {
-        @include shadow-menu;
+        @include box-shadow(0, 4, 15, .10);
         background-color: white;
         border-radius: 15px;
         margin-top: 12px;

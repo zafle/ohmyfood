@@ -6,8 +6,8 @@
     }
 
     &__item {
-        @include shadow-manual;
-        @extend %margin-center;
+        @include box-shadow(0, 4, 15, .15);
+        @include div-center;
         background-color: $background-light;
         border-radius: 20px;
         height: rem(72);

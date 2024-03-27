@@ -1,7 +1,7 @@
 /* ####### BUTTON ####### */
 .btn {
     display: block;
-    @extend %margin-center;
+    @include div-center;
     width: rem(218);
     height: rem(50);
     background: $button-gradient;
@@ -11,7 +11,7 @@
     border: none;
     border-radius: 25px;
     font-size: rem(16);
-    @include shadow-button;
+    @include box-shadow(0, 4, 10, .25);
     cursor: pointer;
     position: relative;
 }
@@ -30,7 +30,7 @@
         background-color: white;
         opacity: 0;
         border-radius: 25px;
-        @include shadow-button-hover;
+        @include box-shadow(0, 4, 15, .35);
         transition: opacity 300ms ease-in;
     }
 

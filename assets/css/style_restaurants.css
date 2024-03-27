@@ -1,13 +1,5 @@
 .restaurant-menu {
-  padding: 32px 13px 40px 13px;
-}
-
-.restaurant-menu {
   background: #F6F6F6;
-}
-
-.restaurant-menu__service, .restaurant-menu__header, .btn, .main-header__logo {
-  margin: 0 auto;
 }
 
 .restaurant-menu__description, .restaurant-menu__dish {
@@ -75,6 +67,7 @@ a {
 html, body {
   font-family: "Roboto";
   font-size: 16px;
+  font-weight: 400;
   scroll-behavior: smooth;
 }
 
@@ -88,6 +81,8 @@ html, body {
 }
 .main-header__logo {
   width: 10.125rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media only screen and (min-width: 1024px) {
   .main-header {
@@ -106,11 +101,17 @@ html, body {
 .main-header__back-to-home {
   position: absolute;
   font-size: 1.25rem;
-  padding: 7px;
-  margin: 17px;
+  margin-left: 17px;
+  line-height: 3.9375rem;
   top: 0;
   left: 0;
   cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  .main-header__back-to-home {
+    margin-left: 23px;
+    line-height: 5.875rem;
+  }
 }
 
 /* ####### FOOTER ####### */
@@ -187,6 +188,8 @@ html, body {
 /* ####### BUTTON ####### */
 .btn {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 13.625rem;
   height: 3.125rem;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -266,7 +269,7 @@ html, body {
 /* Titles*/
 .restaurant-menu__title-restaurant {
   font-size: 1.75rem;
-  font-family: shrikhand;
+  font-family: "shrikhand";
 }
 .restaurant-menu__title {
   font-size: 1rem;
@@ -300,16 +303,33 @@ html, body {
   object-fit: cover;
   width: 100%;
 }
+@media only screen and (min-width: 768px) {
+  .restaurant-hero__image {
+    height: 24.0625rem;
+    object-position: 50% 60%;
+  }
+}
 
 /* ####### MENU ####### */
 .restaurant-menu {
   position: relative;
+  padding: 32px 13px 40px 13px;
   margin-top: -55px;
   border-radius: 40px 40px 0 0;
   overflow: hidden;
 }
+@media only screen and (min-width: 768px) {
+  .restaurant-menu {
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+  }
+}
 .restaurant-menu__header {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
   align-items: center;
   max-width: 340px;
@@ -324,6 +344,8 @@ html, body {
 }
 .restaurant-menu__service {
   margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 635px;
 }
 .restaurant-menu__service:last-of-type {

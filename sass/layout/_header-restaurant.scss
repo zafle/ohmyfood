@@ -1,5 +1,5 @@
 /* ####### HEADER ####### */
-// for restaurants pages 
+// for restaurants pages
 .main-header {
     &--restaurant {
         position: relative;
@@ -8,10 +8,15 @@
     &__back-to-home {
         position: absolute;
         font-size: rem(20);
-        padding: 7px;
-        margin: 17px;
+        margin-left: 17px;
+        line-height: rem(63);
         top: 0;
         left: 0;
         cursor: pointer;
+
+        @media #{$large-screen} {
+            margin-left: 23px;
+            line-height: rem(94);
+        }
     }
 }

@@ -31,7 +31,7 @@ h1, h2 {
     color: $contrast-heavy;
     background: $background-medium;
     text-align: center;
-    @include shadow-medium;
+    @include box-shadow(0, 4, 4, .25);
     z-index: 2;
     position: relative;
 
@@ -90,6 +90,6 @@ h1, h2 {
     &__link {
         width: fit-content;
         display: block;
-        @extend %margin-center;
+        @include div-center;
     }
 }

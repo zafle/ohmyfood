@@ -4,30 +4,6 @@
     box-shadow: #{$x}px #{$y}px #{$blur}px rgba(0, 0, 0, $transparency);
 }
 
-@mixin shadow-light {
-    @include box-shadow(0, 2, 4, .15);
-}
-
-@mixin shadow-medium {
-    @include box-shadow(0, 4, 4, .25);
-}
-
-@mixin shadow-button {
-    @include box-shadow(0, 4, 10, .25);
-}
-
-@mixin shadow-button-hover {
-    @include box-shadow(0, 4, 15, .35);
-}
-
-@mixin shadow-manual {
-    @include box-shadow(0, 4, 15, .15);
-}
-
-@mixin shadow-menu {
-    @include box-shadow(0, 4, 15, .10);
-}
-
 // FLEX
 // set row-gap
 @mixin flex-column($r-gap) {
