@@ -124,7 +124,7 @@
     &__info {
         display: flex;
         align-items: flex-end;
-        transform: translateX(rem(60));
+        margin-right: -60px;
     }
 
     &__price {

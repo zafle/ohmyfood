@@ -1,0 +1,16 @@
+/* ####### MENU ANIMATION ####### */
+
+.restaurant-menu {
+
+    &__info {
+        transition: margin-right 300ms ease-out;
+    }
+
+    &__checkbox:checked + &__label &__info {
+            margin-right: 0;
+    }
+
+    &__checkbox:not(:checked) + &__label &__info {
+            margin-right: -60px;
+    }
+}
