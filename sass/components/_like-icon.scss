@@ -1,4 +1,4 @@
-/* like icon */
+/* ####### LIKE ICON ####### */
 
 .like {
 
@@ -20,5 +20,35 @@
         left: 0;
         opacity: 0;
     }
+}
 
+/* "Like" animation */
+
+.like {
+
+    &__icon {
+        transition: opacity 500ms ease-in;
+    }
+
+    &__checkbox:checked + &__favorite &__icon{
+
+        &--filled {
+            opacity: 1;
+        }
+
+        &--empty {
+            opacity: 0;
+        }
+    }
+
+    &__checkbox:not(:checked) + &__favorite &__icon{
+
+        &--filled {
+            opacity: 0;
+        }
+
+        &--empty {
+            opacity: 1;
+        }
+    }
 }

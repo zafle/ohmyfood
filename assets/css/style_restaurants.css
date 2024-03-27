@@ -78,41 +78,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* ####### Button animation ######## */
-.btn:active::after {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  opacity: 0.15;
-}
-.btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: white;
-  opacity: 0;
-  border-radius: 25px;
-  transition: opacity 300ms;
-}
-
-/* "Like" animation */
-.like__icon {
-  transition: opacity 500ms ease-in;
-}
-.like__checkbox:checked + .like__favorite .like__icon--filled {
-  opacity: 1;
-}
-.like__checkbox:checked + .like__favorite .like__icon--empty {
-  opacity: 0;
-}
-.like__checkbox:not(:checked) + .like__favorite .like__icon--filled {
-  opacity: 0;
-}
-.like__checkbox:not(:checked) + .like__favorite .like__icon--empty {
-  opacity: 1;
-}
-
 /* ####### HEADER ####### */
 .main-header {
   padding-top: 22px;
@@ -163,7 +128,7 @@ html, body {
   text-align: center;
 }
 
-/* button */
+/* ####### BUTTON ####### */
 .btn {
   width: 13.625rem;
   height: 3.125rem;
@@ -180,7 +145,25 @@ html, body {
   position: relative;
 }
 
-/* like icon */
+/* ####### Button animation ######## */
+.btn:active::after {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  opacity: 0.15;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  border-radius: 25px;
+  transition: opacity 300ms;
+}
+
+/* ####### LIKE ICON ####### */
 .like__checkbox {
   display: none;
 }
@@ -196,6 +179,23 @@ html, body {
   right: 0;
   left: 0;
   opacity: 0;
+}
+
+/* "Like" animation */
+.like__icon {
+  transition: opacity 500ms ease-in;
+}
+.like__checkbox:checked + .like__favorite .like__icon--filled {
+  opacity: 1;
+}
+.like__checkbox:checked + .like__favorite .like__icon--empty {
+  opacity: 0;
+}
+.like__checkbox:not(:checked) + .like__favorite .like__icon--filled {
+  opacity: 0;
+}
+.like__checkbox:not(:checked) + .like__favorite .like__icon--empty {
+  opacity: 1;
 }
 
 /* ####### GENERAL ####### */
