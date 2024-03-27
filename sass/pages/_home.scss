@@ -1,3 +1,13 @@
+// Homepage
+
+/* ####### GENERAL ####### */
+
+/* Titles */
+h1, h2 {
+    font-size: rem(24);
+    font-weight: $bold-weight;
+}
+
 /* ####### LOCATIONS ####### */
 
 .location {
@@ -15,7 +25,7 @@
     }
 }
 
-/* ####### INTRODUCTION /MANUAL / RESTAURANTS ####### */
+/* ####### INTRODUCTION / MANUAL / RESTAURANTS ####### */
 
 .introduction, .manual, .restaurants {
     @extend %homesection;

@@ -8,8 +8,6 @@
 
 @import 'base/reset';
 @import 'base/base';
-@import 'base/typography';
-@import 'base/colors';
 @import 'base/animations';
 
 @import 'layout/navigation';
@@ -17,13 +15,8 @@
 @import 'layout/header-restaurant';
 @import 'layout/footer';
 
-// @import 'components/loader';
-// @import 'components/cards';
 @import 'components/menus';
 @import 'components/buttons';
 @import 'components/like-icon';
-// @import 'components/manual';
-// @import 'components/restaurants-card';
 
-// @import 'pages/home';
 @import 'pages/restaurant';

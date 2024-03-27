@@ -64,14 +64,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* ####### Homepage ####### */
-/* Titles*/
-.home-main h1,
-.home-main h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
 /* ####### Button animation ######## */
 .btn:active::after {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
@@ -119,7 +111,7 @@ html, body {
   width: 10.125rem;
 }
 
-/* ####### HEADER for restaurants pages ####### */
+/* ####### HEADER ####### */
 .main-header--restaurant {
   position: relative;
 }
@@ -192,11 +184,44 @@ html, body {
   opacity: 0;
 }
 
-/* PAGES RESTAURANT */
-.page-hero__image {
+/* ####### GENERAL ####### */
+/* Titles*/
+.restaurant-menu__title-restaurant {
+  font-size: 1.75rem;
+  font-family: shrikhand;
+}
+.restaurant-menu__title {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.restaurant-menu__dish {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.restaurant-menu__description {
+  font-size: 0.9375rem;
+  font-weight: 300;
+}
+.restaurant-menu__price {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+/* ####### HERO ####### */
+.restaurant-hero__image {
   height: 17.1875rem;
   object-fit: cover;
   width: 100%;
+}
+
+/* ####### MENU ####### */
+.restaurant-menu {
+  position: relative;
+  background: #F6F6F6;
+  margin-top: -55px;
+  border-radius: 40px 40px 0 0;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style_restaurants.css.map */

@@ -72,14 +72,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* ####### Homepage ####### */
-/* Titles*/
-.home-main h1,
-.home-main h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
 /* ####### Button animation ######## */
 .btn:active::after {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
@@ -294,6 +286,13 @@ html, body {
   opacity: 0;
 }
 
+/* ####### GENERAL ####### */
+/* Titles */
+h1, h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 /* ####### LOCATIONS ####### */
 .location {
   padding: 15.5px;
@@ -309,7 +308,7 @@ html, body {
   margin-left: 17px;
 }
 
-/* ####### INTRODUCTION /MANUAL / RESTAURANTS ####### */
+/* ####### INTRODUCTION / MANUAL / RESTAURANTS ####### */
 /* ####### INTRODUCTION ####### */
 .introduction {
   text-align: center;

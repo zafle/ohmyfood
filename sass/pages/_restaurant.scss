@@ -1,6 +1,44 @@
-/* PAGES RESTAURANT */
+// Restaurants
 
-.page-hero {
+/* ####### GENERAL ####### */
+
+/* Titles*/
+.restaurant-menu {
+    // h1
+    &__title-restaurant {
+        font-size: rem(28);
+        font-family: shrikhand;
+    }
+
+    // h2
+    &__title {
+        font-size: rem(16);
+        font-weight: $light-weight;
+        text-transform: uppercase;
+    }
+
+    // h3
+    &__dish {
+        font-size: rem(18);
+        font-weight: $medium-weight;
+    }
+
+    // p
+    &__description {
+        font-size: rem(15);
+        font-weight: $light-weight;
+    }
+
+    // span
+    &__price {
+        font-size: rem(15);
+        font-weight: $bold-weight;
+    }
+}
+
+/* ####### HERO ####### */
+
+.restaurant-hero {
     &__image {
         height: rem(275);
         object-fit: cover;
@@ -8,3 +46,13 @@
     }
 }
 
+/* ####### MENU ####### */
+
+.restaurant-menu {
+    position: relative;
+    background: $background-light;
+    margin-top: -55px;
+    border-radius: 40px 40px 0 0;
+    overflow: hidden;
+
+}
