@@ -15,6 +15,15 @@
         font-size: rem(16);
         font-weight: $light-weight;
         text-transform: uppercase;
+
+        &::after {
+            content: '';
+            display: block;
+            width: rem(40);
+            height: rem(3);
+            background-color: $secondary-light;
+            margin-top: 4px;
+        }
     }
 
     // h3
@@ -50,9 +59,87 @@
 
 .restaurant-menu {
     position: relative;
-    background: $background-light;
+    @extend %background-light;
+    @extend %menusection;
     margin-top: -55px;
     border-radius: 40px 40px 0 0;
     overflow: hidden;
 
+    &__header {
+        display: flex;
+        @extend %margin-center;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 340px;
+    }
+
+    &__title-restaurant {
+        margin-right: 8px;
+        text-wrap: nowrap;
+    }
+
+    &__like {
+        flex-shrink: 0;
+        margin-right: 27px;
+    }
+
+    &__service {
+        margin-top: 40px;
+        @extend %margin-center;
+        max-width: 635px;
+    }
+
+    &__item {
+        @include shadow-menu;
+        background-color: white;
+        border-radius: 15px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__label {
+        display: flex;
+        justify-content: space-between;
+        height: rem(70);
+    }
+
+    &__text {
+        padding: 13px 15px;
+        overflow: hidden;
+    }
+
+    &__dish {
+        margin-bottom: 5px;
+        @extend %text-ellipsis;
+    }
+
+    &__description {
+        @extend %text-ellipsis;
+    }
+
+    &__info {
+        display: flex;
+        align-items: flex-end;
+        transform: translateX(rem(60));
+    }
+
+    &__price {
+        display: block;
+        padding-right: 15px;
+        padding-bottom: 13px;
+    }
+
+    &__check {
+        width: rem(60);
+        height: 100%;
+        background-color: $secondary-light;
+        color: white;
+        font-size: rem(20);
+        line-height: rem(70);
+        text-align: center;
+    }
 }

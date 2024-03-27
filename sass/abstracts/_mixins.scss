@@ -24,6 +24,10 @@
     @include box-shadow(0, 4, 15, .15);
 }
 
+@mixin shadow-menu {
+    @include box-shadow(0, 4, 15, .10);
+}
+
 // FLEX
 // set row-gap
 @mixin flex-column($r-gap) {

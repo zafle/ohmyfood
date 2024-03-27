@@ -1,5 +1,19 @@
-.main-header__logo {
+.restaurant-menu {
+  background: #F6F6F6;
+}
+
+.restaurant-menu__service, .restaurant-menu__header, .main-header__logo {
   margin: 0 auto;
+}
+
+.restaurant-menu__description, .restaurant-menu__dish {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.restaurant-menu {
+  padding: 32px 13px 0 13px;
 }
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -195,6 +209,14 @@ html, body {
   font-weight: 300;
   text-transform: uppercase;
 }
+.restaurant-menu__title::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 0.1875rem;
+  background-color: #99E2D0;
+  margin-top: 4px;
+}
 .restaurant-menu__dish {
   font-size: 1.125rem;
   font-weight: 500;
@@ -218,10 +240,68 @@ html, body {
 /* ####### MENU ####### */
 .restaurant-menu {
   position: relative;
-  background: #F6F6F6;
   margin-top: -55px;
   border-radius: 40px 40px 0 0;
   overflow: hidden;
+}
+.restaurant-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 340px;
+}
+.restaurant-menu__title-restaurant {
+  margin-right: 8px;
+  text-wrap: nowrap;
+}
+.restaurant-menu__like {
+  flex-shrink: 0;
+  margin-right: 27px;
+}
+.restaurant-menu__service {
+  margin-top: 40px;
+  max-width: 635px;
+}
+.restaurant-menu__item {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+.restaurant-menu__checkbox {
+  display: none;
+}
+.restaurant-menu__label {
+  display: flex;
+  justify-content: space-between;
+  height: 4.375rem;
+}
+.restaurant-menu__text {
+  padding: 13px 15px;
+  overflow: hidden;
+}
+.restaurant-menu__dish {
+  margin-bottom: 5px;
+}
+.restaurant-menu__info {
+  display: flex;
+  align-items: flex-end;
+  transform: translateX(3.75rem);
+}
+.restaurant-menu__price {
+  display: block;
+  padding-right: 15px;
+  padding-bottom: 13px;
+}
+.restaurant-menu__check {
+  width: 3.75rem;
+  height: 100%;
+  background-color: #99E2D0;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 4.375rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style_restaurants.css.map */

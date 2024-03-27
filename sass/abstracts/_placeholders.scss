@@ -8,8 +8,20 @@
     margin: 0 auto;
 }
 
+%text-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 // ####### HOMEPAGE #######
-// paddings
+// padding for home page sections
 %homesection {
     padding: 40px 20px 60px 20px;
+}
+
+// ####### RESTAURANTS #######
+// padding for menus sections
+%menusection {
+    padding: 32px 13px 0 13px;
 }
