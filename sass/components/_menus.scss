@@ -15,8 +15,9 @@
 // Animation iteration
 
 // The restaurants names, numbers of starters, main-courses and desserts
-// are to be defined in _variables.scss
-@include restaurants-dishes-animation($restaurants);
+// are to be defined in _variables.scss into the $restaurants variable
+// given here as parameter
+@include dishes-animation($restaurants);
 
 /* green check animation */
 .restaurant-menu {
