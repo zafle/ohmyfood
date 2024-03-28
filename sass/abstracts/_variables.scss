@@ -1,3 +1,6 @@
+@use 'sass:list';
+@use 'sass:map';
+
 // ####### TYPOGRAPHY #######
 
 // Font-families
@@ -33,3 +36,13 @@ $button-gradient: linear-gradient(to bottom, $primary-to-gradient, $primary);
 
 $medium-screen: "only screen and (min-width: 768px)";
 $large-screen: "only screen and (min-width: 1024px)";
+
+// RESTAURANTS
+
+// Restaurant list definition, using this format :
+// ("restaurant-name" "number of starters" "number of main-courses" "number of desserts")
+$restaurants:
+    ("la-palette-du-gout" 3 3 3),
+    ("la-note-enchantee" 4 3 3),
+    ("a-la-francaise" 3 3 3),
+    ("le-delice-des-sens" 3 3 3);

@@ -170,6 +170,168 @@ html, body {
 }
 
 /* ####### MENU ANIMATION ####### */
+/* DISHES ENTRANCE ANIMATION */
+@keyframes dish-appear {
+  from {
+    transform: translateX(-135%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* animation for la-palette-du-gout entrance dishes */
+.restaurant-menu__la-palette-du-gout .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 200ms both;
+}
+
+.restaurant-menu__la-palette-du-gout .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 400ms both;
+}
+
+.restaurant-menu__la-palette-du-gout .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 600ms both;
+}
+
+.restaurant-menu__la-palette-du-gout .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 800ms both;
+}
+
+.restaurant-menu__la-palette-du-gout .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 1000ms both;
+}
+
+.restaurant-menu__la-palette-du-gout .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 1200ms both;
+}
+
+.restaurant-menu__la-palette-du-gout .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 1400ms both;
+}
+
+.restaurant-menu__la-palette-du-gout .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 1600ms both;
+}
+
+.restaurant-menu__la-palette-du-gout .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 1800ms both;
+}
+
+/* animation for la-note-enchantee entrance dishes */
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 200ms both;
+}
+
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 400ms both;
+}
+
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 600ms both;
+}
+
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(4) {
+  animation: dish-appear 1s ease-out 800ms both;
+}
+
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 1000ms both;
+}
+
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 1200ms both;
+}
+
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 1400ms both;
+}
+
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 1600ms both;
+}
+
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 1800ms both;
+}
+
+.restaurant-menu__la-note-enchantee .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 2000ms both;
+}
+
+/* animation for a-la-francaise entrance dishes */
+.restaurant-menu__a-la-francaise .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 200ms both;
+}
+
+.restaurant-menu__a-la-francaise .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 400ms both;
+}
+
+.restaurant-menu__a-la-francaise .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 600ms both;
+}
+
+.restaurant-menu__a-la-francaise .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 800ms both;
+}
+
+.restaurant-menu__a-la-francaise .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 1000ms both;
+}
+
+.restaurant-menu__a-la-francaise .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 1200ms both;
+}
+
+.restaurant-menu__a-la-francaise .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 1400ms both;
+}
+
+.restaurant-menu__a-la-francaise .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 1600ms both;
+}
+
+.restaurant-menu__a-la-francaise .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 1800ms both;
+}
+
+/* animation for le-delice-des-sens entrance dishes */
+.restaurant-menu__le-delice-des-sens .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 200ms both;
+}
+
+.restaurant-menu__le-delice-des-sens .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 400ms both;
+}
+
+.restaurant-menu__le-delice-des-sens .restaurant-menu__service:nth-of-type(1) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 600ms both;
+}
+
+.restaurant-menu__le-delice-des-sens .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 800ms both;
+}
+
+.restaurant-menu__le-delice-des-sens .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 1000ms both;
+}
+
+.restaurant-menu__le-delice-des-sens .restaurant-menu__service:nth-of-type(2) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 1200ms both;
+}
+
+.restaurant-menu__le-delice-des-sens .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(1) {
+  animation: dish-appear 1s ease-out 1400ms both;
+}
+
+.restaurant-menu__le-delice-des-sens .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(2) {
+  animation: dish-appear 1s ease-out 1600ms both;
+}
+
+.restaurant-menu__le-delice-des-sens .restaurant-menu__service:nth-of-type(3) .restaurant-menu__item:nth-child(3) {
+  animation: dish-appear 1s ease-out 1800ms both;
+}
+
+/* green check animation */
 .restaurant-menu__info {
   transition: margin-right 300ms ease-out;
 }
@@ -357,6 +519,7 @@ html, body {
   border-radius: 15px;
   margin-top: 12px;
   overflow: hidden;
+  transform: translateX(-135%);
 }
 .restaurant-menu__checkbox {
   display: none;

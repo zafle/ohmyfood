@@ -1,5 +1,24 @@
 /* ####### MENU ANIMATION ####### */
 
+/* DISHES ENTRANCE ANIMATION */
+
+// Animation definition
+@keyframes dish-appear {
+    from {
+        transform: translateX(-135%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+// Animation iteration
+
+// The restaurants names, numbers of starters, main-courses and desserts
+// are to be defined in _variables.scss
+@include restaurants-dishes-animation($restaurants);
+
+/* green check animation */
 .restaurant-menu {
 
     &__info {

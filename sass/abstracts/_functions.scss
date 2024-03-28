@@ -1,5 +1,7 @@
 @use 'sass:math';
 
+// CALCULATE REM VALUE
+
 // Return a value without unit
 @function strip-unit($number) {
     @if type-of($number) == 'number' and not unitless($number) {

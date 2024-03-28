@@ -1,3 +1,6 @@
+@use 'sass:list';
+@use 'sass:map';
+
 // SHADOWS
 
 @mixin box-shadow($x, $y, $blur, $transparency) {
@@ -32,4 +35,48 @@
 @mixin max-width-large {
     max-width: 1055px;
     @include div-center;
+}
+
+// GENERATE ANIMATION FOR MENU DISHES APPEARANCE
+
+// this mixin is only to use inside the dishes-entrance mixin
+// this mixin uses parameters defined by the dishes-entrance mixin
+@mixin service-entrance($restaurant-name, $dishes-number, $service-type, $step-delay) {
+    @for $i from 1 through $dishes-number {
+        .restaurant-menu {
+          &__#{$restaurant-name} &__service:nth-of-type(#{$service-type}) &__item:nth-child(#{$i}) {
+              animation: dish-appear 1s ease-out calc( ( $step-delay + (200 * $i) ) * 1ms ) both;
+          }
+        }
+      }
+}
+
+// this mixin is only to use inside the restaurants-dishes-animation mixin to write specifics codes lines for the given restaurant,
+// using restaurant's name and number of dishes for each service
+@mixin dishes-entrance($restaurant-name, $starters-number, $main-courses-number, $desserts-number) {
+
+    // list definition for numbers of dishes for each service
+    $services: $starters-number, $main-courses-number, $desserts-number;
+
+    // calcul of the animation delay applied for each service
+    $step-delay-starters: 0;
+    $step-delay-main-courses: calc($starters-number * 200);
+    $step-delay-desserts: calc( $step-delay-main-courses + ($main-courses-number * 200) );
+
+    // list of the animation delays for each service
+    $step-delays: $step-delay-starters, $step-delay-main-courses, $step-delay-desserts;
+
+    // use of the service-entrance mixin for each service
+    @for $i from 1 through 3 {
+        @include service-entrance($restaurant-name, $dishes-number: list.nth($services, $i), $service-type: $i, $step-delay: list.nth($step-delays, $i) );
+    }
+}
+
+// this mixin is to be used in the _menus.scss for dishes entrance animation
+// it uses the $restaurants map defined in _variables.scss
+@mixin restaurants-dishes-animation($restaurants) {
+    @each $name, $starters, $main-courses, $desserts in $restaurants {
+        /* animation for #{$name} entrance dishes */
+        @include dishes-entrance($name, $starters, $main-courses, $desserts);
+    }
 }
