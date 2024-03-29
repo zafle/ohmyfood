@@ -2,6 +2,13 @@
   background: #F6F6F6;
 }
 
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -63,6 +70,7 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 /* ####### HEADER ####### */
@@ -143,6 +151,265 @@ html, body {
   }
 }
 
+/* LOADER ANIMATION */
+body {
+  animation: body_anim 3s;
+}
+
+.loader {
+  z-index: 100000;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  animation: page-loader__anim 3s forwards;
+}
+.loader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  overflow: visible;
+  animation: loader-anim 8s linear 1;
+}
+.loader__image {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
+.loader__image:nth-of-type(1) {
+  transform: translate(0px, -100px) rotate(0deg);
+  animation: anim-heart-1 1200ms ease-in-out 0ms 10 alternate both;
+}
+
+.loader__image:nth-of-type(2) {
+  transform: translate(70.7106781187px, -70.7106781187px) rotate(45deg);
+  animation: anim-heart-2 1200ms ease-in-out 300ms 10 alternate both;
+}
+
+.loader__image:nth-of-type(3) {
+  transform: translate(100px, 0px) rotate(90deg);
+  animation: anim-heart-3 1200ms ease-in-out 600ms 10 alternate both;
+}
+
+.loader__image:nth-of-type(4) {
+  transform: translate(70.7106781187px, 70.7106781187px) rotate(135deg);
+  animation: anim-heart-4 1200ms ease-in-out 900ms 10 alternate both;
+}
+
+.loader__image:nth-of-type(5) {
+  transform: translate(0px, 100px) rotate(180deg);
+  animation: anim-heart-5 1200ms ease-in-out 1200ms 10 alternate both;
+}
+
+.loader__image:nth-of-type(6) {
+  transform: translate(-70.7106781187px, 70.7106781187px) rotate(225deg);
+  animation: anim-heart-6 1200ms ease-in-out 1500ms 10 alternate both;
+}
+
+.loader__image:nth-of-type(7) {
+  transform: translate(-100px, 0px) rotate(270deg);
+  animation: anim-heart-7 1200ms ease-in-out 1800ms 10 alternate both;
+}
+
+.loader__image:nth-of-type(8) {
+  transform: translate(-70.7106781187px, -70.7106781187px) rotate(315deg);
+  animation: anim-heart-8 1200ms ease-in-out 2100ms 10 alternate both;
+}
+
+@keyframes anim-heart-1 {
+  0% {
+    transform: translate(0px, -100px) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0px, -40px) rotate(0deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, -40px) rotate(0deg);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.04, 0.93, 0.1, 0.85);
+  }
+}
+@keyframes anim-heart-2 {
+  0% {
+    transform: translate(70.7106781187px, -70.7106781187px) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(28.2842712475px, -28.2842712475px) rotate(45deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(28.2842712475px, -28.2842712475px) rotate(45deg);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.04, 0.93, 0.1, 0.85);
+  }
+}
+@keyframes anim-heart-3 {
+  0% {
+    transform: translate(100px, 0px) rotate(90deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(40px, 0px) rotate(90deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(40px, 0px) rotate(90deg);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.04, 0.93, 0.1, 0.85);
+  }
+}
+@keyframes anim-heart-4 {
+  0% {
+    transform: translate(70.7106781187px, 70.7106781187px) rotate(135deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(28.2842712475px, 28.2842712475px) rotate(135deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(28.2842712475px, 28.2842712475px) rotate(135deg);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.04, 0.93, 0.1, 0.85);
+  }
+}
+@keyframes anim-heart-5 {
+  0% {
+    transform: translate(0px, 100px) rotate(180deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0px, 40px) rotate(180deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 40px) rotate(180deg);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.04, 0.93, 0.1, 0.85);
+  }
+}
+@keyframes anim-heart-6 {
+  0% {
+    transform: translate(-70.7106781187px, 70.7106781187px) rotate(225deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(-28.2842712475px, 28.2842712475px) rotate(225deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-28.2842712475px, 28.2842712475px) rotate(225deg);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.04, 0.93, 0.1, 0.85);
+  }
+}
+@keyframes anim-heart-7 {
+  0% {
+    transform: translate(-100px, 0px) rotate(270deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(-40px, 0px) rotate(270deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-40px, 0px) rotate(270deg);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.04, 0.93, 0.1, 0.85);
+  }
+}
+@keyframes anim-heart-8 {
+  0% {
+    transform: translate(-70.7106781187px, -70.7106781187px) rotate(315deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(-28.2842712475px, -28.2842712475px) rotate(315deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-28.2842712475px, -28.2842712475px) rotate(315deg);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.04, 0.93, 0.1, 0.85);
+  }
+}
+@keyframes loader-anim {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes page-loader__anim {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes body_anim {
+  0% {
+    height: 100vh;
+    overflow-y: hidden;
+    position: fixed;
+  }
+  99% {
+    height: 100vh;
+    overflow-y: hidden;
+    position: fixed;
+  }
+  100% {
+    height: unset;
+    overflow-y: visible;
+    position: relative;
+  }
+}
 /* ####### BUTTON ####### */
 .btn {
   display: block;

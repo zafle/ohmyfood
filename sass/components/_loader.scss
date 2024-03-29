@@ -1,0 +1,94 @@
+/* LOADER ANIMATION */
+
+// reduce body size to 100vh
+body {
+    animation: body_anim 3s;
+}
+
+.loader {
+    z-index: 100000;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    @extend %absolute-center;
+    animation: page-loader__anim 3s forwards;
+
+    &__container  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $loader-size-end;
+        height: $loader-size-end;
+        overflow: visible;
+        animation: loader-anim 8s linear 1;
+    }
+
+    &__image {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $heart-size;
+        height: $heart-size;
+    }
+}
+
+@include heart-loader-start-position;
+@include heart-keyframes;
+
+@keyframes loader-anim {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    25% {
+        transform: rotate(90deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1);
+    }
+    75% {
+        transform: rotate(270deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes page-loader__anim {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes body_anim {
+    0% {
+        height: 100vh;
+        overflow-y: hidden;
+        position: fixed;
+    }
+    99% {
+        height: 100vh;
+        overflow-y: hidden;
+        position: fixed;
+
+    }
+    100% {
+        height: unset;
+        overflow-y: visible;
+        position: relative;
+    }
+}

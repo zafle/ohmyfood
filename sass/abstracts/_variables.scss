@@ -46,3 +46,21 @@ $restaurants:
     ("la-note-enchantee" 4 3 3),
     ("a-la-francaise" 3 3 3),
     ("le-delice-des-sens" 3 3 3);
+
+// LOADER
+$loader-size-start: 250px;
+$loader-size-end: 130px;
+
+$heart-size: 25px;
+$heart-position-start: calc($loader-size-start / 2 - $heart-size);
+$heart-position-end: calc($loader-size-end / 2 - $heart-size);
+$heart-angles:
+    calc(pi / -2),
+    calc(pi / -4),
+    0,
+    calc(pi / 4),
+    calc(pi / 2),
+    calc(-5 * pi / 4),
+    calc(pi),
+    calc(5 * pi / 4),
+    calc(pi / -2);

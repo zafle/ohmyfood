@@ -4,12 +4,17 @@
     background: $background-light;
 }
 
-%margin-center {
-    margin: 0 auto;
-}
 // text-ellipsis
 %text-ellipsis {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+// ####### LOADER #######
+%absolute-center {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
