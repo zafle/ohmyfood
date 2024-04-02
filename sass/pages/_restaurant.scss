@@ -50,12 +50,14 @@
 .restaurant-hero {
     &__image {
         height: rem(275);
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 100%;
 
         @media #{$medium-screen} {
             height: rem(385);
-            object-position: 50% 60%;
+            -o-object-position: 50% 60%;
+               object-position: 50% 60%;
         }
     }
 }

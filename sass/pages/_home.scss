@@ -88,6 +88,8 @@ h1, h2 {
     }
 
     &__link {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         display: block;
         @include div-center;

@@ -3,6 +3,14 @@
 /* DISHES ENTRANCE ANIMATION */
 
 // Animation definition
+@-webkit-keyframes dish-appear {
+    from {
+        transform: translateX(-135%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
 @keyframes dish-appear {
     from {
         transform: translateX(-135%);

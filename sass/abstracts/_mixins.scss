@@ -19,7 +19,8 @@
 @mixin flex-row($c-gap, $r-gap) {
     display: flex;
     flex-direction: row;
-    column-gap: $c-gap;
+    -moz-column-gap: $c-gap;
+         column-gap: $c-gap;
     row-gap: $r-gap;
 }
 
@@ -46,7 +47,8 @@
     @for $i from 1 through $dishes-number {
         .restaurant-menu {
           &__#{$restaurant-name} &__service:nth-of-type(#{$service-type}) &__item:nth-child(#{$i}) {
-              animation: dish-appear 1s ease-out calc( ( $step-delay + (200 * $i) ) * 1ms ) both;
+              -webkit-animation: dish-appear 1s ease-out calc( ( $step-delay + (200 * $i) ) * 1ms ) both;
+                      animation: dish-appear 1s ease-out calc( ( $step-delay + (200 * $i) ) * 1ms ) both;
           }
         }
     }
@@ -85,13 +87,32 @@
         .loader__image:nth-of-type(#{$i}) {
             $heart-angle: list.nth($heart-angles, $i);
             transform: translate( calc( cos($heart-angle) *  $heart-position-start), calc( sin($heart-angle) * $heart-position-start) ) rotate(calc( ($i - 1) * 45) * 1deg);
-            animation: anim-heart-#{$i} 1200ms ease-in-out calc(300ms * ($i - 1)) 10 alternate both;
+            -webkit-animation: anim-heart-#{$i} 1200ms ease-in-out calc(300ms * ($i - 1)) 10 alternate both;
+                    animation: anim-heart-#{$i} 1200ms ease-in-out calc(300ms * ($i - 1)) 10 alternate both;
         }
     }
 }
 
 // keyframes for hearts animation
 @mixin keyframes($heart-angle, $i) {
+    @-webkit-keyframes anim-heart-#{$i} {
+        0% {
+            transform: translate( calc( cos($heart-angle) *  $heart-position-start), calc( sin($heart-angle) * $heart-position-start) ) rotate(calc( ($i - 1) * 45) * 1deg);
+            opacity: 0;
+        }
+        25% {
+            transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
+            opacity: 1;
+            -webkit-animation-timing-function: cubic-bezier(.04,.93,.1,.85);
+                    animation-timing-function: cubic-bezier(.04,.93,.1,.85);
+        }
+    }
     @keyframes anim-heart-#{$i} {
         0% {
             transform: translate( calc( cos($heart-angle) *  $heart-position-start), calc( sin($heart-angle) * $heart-position-start) ) rotate(calc( ($i - 1) * 45) * 1deg);
@@ -106,7 +127,8 @@
         100% {
             transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
             opacity: 1;
-            animation-timing-function: cubic-bezier(.04,.93,.1,.85);
+            -webkit-animation-timing-function: cubic-bezier(.04,.93,.1,.85);
+                    animation-timing-function: cubic-bezier(.04,.93,.1,.85);
         }
     }
 }
