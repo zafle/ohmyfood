@@ -57,8 +57,9 @@
     }
 
     &__like {
-        margin-top: 8px;
-        margin-right: 13px;
+        position: absolute;
+        bottom: 33px;
+        right: 25px;
     }
 
     &__notification {

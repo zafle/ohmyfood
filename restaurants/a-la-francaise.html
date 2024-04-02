@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../assets/css/style_restaurants.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon.png">
     <title>À la française</title>
@@ -21,14 +21,14 @@
             <img class="main-header__logo" src="../assets/images/logo/ohmyfood.png" alt="logo ohmyfood">
         </header>
         <main>
-            <section class="restaurant-hero">
-                <picture>
+            <header class="restaurant-hero">
+                <picture class="restaurant-hero">
                     <source media="(min-width: 1440px)" srcset="../assets/images/restaurant/a-la-francaise_xxl.jpg">
                     <source media="(min-width: 1024px)" srcset="../assets/images/restaurant/a-la-francaise_large.jpg">
                     <source media="(min-width: 768px)" srcset="../assets/images/restaurant/a-la-francaise_medium.jpg">
                     <img class="restaurant-hero__image" src="../assets/images/restaurant/a-la-francaise_small.jpg" alt="Photographie d'un plat servi au restaurant">
                 </picture>
-            </section>
+            </header>
             <section class="restaurant-menu restaurant-menu__a-la-francaise">
                 <header class="restaurant-menu__header">
                     <h1 class="restaurant-menu__title-restaurant">À la française</h1>
@@ -45,7 +45,7 @@
                     <ul class="restaurant-menu__items">
                         <li class="restaurant-menu__item">
                             <input type="checkbox" class="restaurant-menu__checkbox" id="menu_check-1">
-                            <label class="restaurant-menu__label" for="menu_check-1">
+                            <div class="restaurant-menu__content">
                                 <div class="restaurant-menu__text">
                                     <h3 class="restaurant-menu__dish">Tartare de poulpe acidulé</h3>
                                     <p class="restaurant-menu__description">Aux zestes d'orange</p>
@@ -54,11 +54,12 @@
                                     <span class="restaurant-menu__price">25€</span>
                                     <i class="fas fa-check-circle restaurant-menu__check"></i>
                                 </div>
-                            </label>
+                            </div>
+                            <label class="restaurant-menu__label" for="menu_check-1"></label>
                         </li>
                         <li class="restaurant-menu__item">
                             <input type="checkbox" class="restaurant-menu__checkbox" id="menu_check-2">
-                            <label class="restaurant-menu__label" for="menu_check-2">
+                            <div class="restaurant-menu__content">
                                 <div class="restaurant-menu__text">
                                     <h3 class="restaurant-menu__dish">Velouté de légumes d'antan</h3>
                                     <p class="restaurant-menu__description">Carotte, panais, topinambour</p>
@@ -67,11 +68,12 @@
                                     <span class="restaurant-menu__price">35€</span>
                                     <i class="fas fa-check-circle restaurant-menu__check"></i>
                                 </div>
-                            </label>
+                            </div>
+                            <label class="restaurant-menu__label" for="menu_check-2"></label>
                         </li>
                         <li class="restaurant-menu__item">
                             <input type="checkbox" class="restaurant-menu__checkbox" id="menu_check-3">
-                            <label class="restaurant-menu__label" for="menu_check-3">
+                            <div class="restaurant-menu__content">
                                 <div class="restaurant-menu__text">
                                     <h3 class="restaurant-menu__dish">Soupe à l'oignon</h3>
                                     <p class="restaurant-menu__description">Revisitée</p>
@@ -80,7 +82,8 @@
                                     <span class="restaurant-menu__price">20€</span>
                                     <i class="fas fa-check-circle restaurant-menu__check"></i>
                                 </div>
-                            </label>
+                            </div>
+                            <label class="restaurant-menu__label" for="menu_check-3"></label>
                         </li>
                     </ul>
                 </div>
@@ -89,7 +92,7 @@
                     <ul class="restaurant-menu__items">
                         <li class="restaurant-menu__item">
                             <input type="checkbox" class="restaurant-menu__checkbox" id="menu_check-4">
-                            <label class="restaurant-menu__label" for="menu_check-4">
+                            <div class="restaurant-menu__content">
                                 <div class="restaurant-menu__text">
                                     <h3 class="restaurant-menu__dish">Coquilles Saint-Jacques</h3>
                                     <p class="restaurant-menu__description">Accompagnées d'une purée de panais</p>
@@ -98,11 +101,12 @@
                                     <span class="restaurant-menu__price">40€</span>
                                     <i class="fas fa-check-circle restaurant-menu__check"></i>
                                 </div>
-                            </label>
+                            </div>
+                            <label class="restaurant-menu__label" for="menu_check-4"></label>
                         </li>
                         <li class="restaurant-menu__item">
                             <input type="checkbox" class="restaurant-menu__checkbox" id="menu_check-5">
-                            <label class="restaurant-menu__label" for="menu_check-5">
+                            <div class="restaurant-menu__content">
                                 <div class="restaurant-menu__text">
                                     <h3 class="restaurant-menu__dish">Magret de canard</h3>
                                     <p class="restaurant-menu__description">Et parmentier de pommes de terre</p>
@@ -111,11 +115,12 @@
                                     <span class="restaurant-menu__price">35€</span>
                                     <i class="fas fa-check-circle restaurant-menu__check"></i>
                                 </div>
-                            </label>
+                            </div>
+                            <label class="restaurant-menu__label" for="menu_check-5"></label>
                         </li>
                         <li class="restaurant-menu__item">
                             <input type="checkbox" class="restaurant-menu__checkbox" id="menu_check-6">
-                            <label class="restaurant-menu__label" for="menu_check-6">
+                            <div class="restaurant-menu__content">
                                 <div class="restaurant-menu__text">
                                     <h3 class="restaurant-menu__dish">Pigeonneau d’Ille-et-Vilaine</h3>
                                     <p class="restaurant-menu__description">Sur son lit de gnocchis aux légumes</p>
@@ -124,7 +129,8 @@
                                     <span class="restaurant-menu__price">44€</span>
                                     <i class="fas fa-check-circle restaurant-menu__check"></i>
                                 </div>
-                            </label>
+                            </div>
+                            <label class="restaurant-menu__label" for="menu_check-6"></label>
                         </li>
                     </ul>
                 </div>
@@ -133,7 +139,7 @@
                     <ul class="restaurant-menu__items">
                         <li class="restaurant-menu__item">
                             <input type="checkbox" class="restaurant-menu__checkbox" id="menu_check-7">
-                            <label class="restaurant-menu__label" for="menu_check-7">
+                            <div class="restaurant-menu__content">
                                 <div class="restaurant-menu__text">
                                     <h3 class="restaurant-menu__dish">Pétales de violettes glacés</h3>
                                     <p class="restaurant-menu__description">Et purée de noisettes</p>
@@ -142,11 +148,12 @@
                                     <span class="restaurant-menu__price">18€</span>
                                     <i class="fas fa-check-circle restaurant-menu__check"></i>
                                 </div>
-                            </label>
+                            </div>
+                            <label class="restaurant-menu__label" for="menu_check-7"></label>
                         </li>
                         <li class="restaurant-menu__item">
                             <input type="checkbox" class="restaurant-menu__checkbox" id="menu_check-8">
-                            <label class="restaurant-menu__label" for="menu_check-8">
+                            <div class="restaurant-menu__content">
                                 <div class="restaurant-menu__text">
                                     <h3 class="restaurant-menu__dish">Fondant au chocolat</h3>
                                     <p class="restaurant-menu__description">Revisité</p>
@@ -155,11 +162,12 @@
                                     <span class="restaurant-menu__price">22€</span>
                                     <i class="fas fa-check-circle restaurant-menu__check"></i>
                                 </div>
-                            </label>
+                            </div>
+                            <label class="restaurant-menu__label" for="menu_check-8"></label>
                         </li>
                         <li class="restaurant-menu__item">
                             <input type="checkbox" class="restaurant-menu__checkbox" id="menu_check-9">
-                            <label class="restaurant-menu__label" for="menu_check-9">
+                            <div class="restaurant-menu__content">
                                 <div class="restaurant-menu__text">
                                     <h3 class="restaurant-menu__dish">Millefeuille croustillant</h3>
                                     <p class="restaurant-menu__description">Myrtilles et pâte d’amande</p>
@@ -168,7 +176,8 @@
                                     <span class="restaurant-menu__price">23€</span>
                                     <i class="fas fa-check-circle restaurant-menu__check"></i>
                                 </div>
-                            </label>
+                            </div>
+                            <label class="restaurant-menu__label" for="menu_check-9"></label>
                         </li>
                     </ul>
                 </div>
@@ -196,7 +205,7 @@
                     <a href="#" target="_self" title="Mentions légales">Mentions légales</a>
                 </li>
                 <li class="footer__menu-item">
-                    <a  href="mailto: contact@ohmyfood.com" title="Envoyer un mail">Contact</a>
+                    <a href="mailto:contact@ohmyfood.com" title="Envoyer un mail">Contact</a>
                 </li>
             </ul>
         </footer>

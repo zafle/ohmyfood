@@ -53,15 +53,16 @@
     }
 }
 
-@media #{$medium-screen} {
+// to add an hover effect, uncomment the lines below
+// @media #{$medium-screen} {
 
-    .like:hover {
+//     .like:hover {
 
-        .like__icon--filled {
-            opacity: 1 !important;
-        }
-        .like__icon--empty {
-            opacity: 0 !important;
-        }
-    }
-}
+//         .like__icon--filled {
+//             opacity: 1 !important;
+//         }
+//         .like__icon--empty {
+//             opacity: 0 !important;
+//         }
+//     }
+// }

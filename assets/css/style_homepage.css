@@ -771,8 +771,9 @@ body {
   margin-top: 5px;
 }
 .restaurants__like {
-  margin-top: 8px;
-  margin-right: 13px;
+  position: absolute;
+  bottom: 33px;
+  right: 25px;
 }
 .restaurants__notification {
   position: absolute;
@@ -828,19 +829,15 @@ body {
   opacity: 1;
 }
 
-@media only screen and (min-width: 768px) {
-  .like:hover .like__icon--filled {
-    opacity: 1 !important;
-  }
-  .like:hover .like__icon--empty {
-    opacity: 0 !important;
-  }
-}
 /* ####### GENERAL ####### */
 /* Titles */
 h1, h2 {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 768px) {
@@ -868,9 +865,9 @@ h1, h2 {
   z-index: 2;
   position: relative;
 }
-.location__text {
-  font-weight: 500;
+.location__title {
   margin-left: 17px;
+  display: inline;
 }
 @media only screen and (min-width: 1024px) {
   .location {
@@ -916,14 +913,6 @@ h1, h2 {
   font-weight: 300;
   margin-top: 20px;
   margin-bottom: 30px;
-}
-.introduction__link {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*# sourceMappingURL=style_homepage.css.map */

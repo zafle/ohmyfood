@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/css/style_homepage.css">
     <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.png">
     <title>ohmyfood</title>
@@ -20,14 +20,12 @@
         <main>
             <section class="location">
                 <i class="fas fa-map-marker-alt location__icon"></i>
-                <span class="location__text">Paris, Belleville</span>
+                <h3 class="location__title">Paris, Belleville</h3>
             </section>
             <section class="introduction">
                 <h1 class="introduction__title">Réservez le menu qui vous convient</h1>
                 <p class="introduction__text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                <a class="introduction__link" href="#restaurants__section" target="_self" title="Aller à la section restaurants">
-                    <button class="introduction__button btn">Explorer nos restaurants</button>
-                </a>
+                <a class="introduction__button btn" href="#restaurants__section" target="_self" title="Aller à la section restaurants">Explorer nos restaurants</a>
             </section>
             <section class="manual">
                 <h2 class="manual__title">Fonctionnement</h2>
@@ -60,16 +58,16 @@
                                     <h3 class="restaurants__name">La palette du goût</h3>
                                     <p class="restaurants__place">Ménilmontant</p>
                                 </div>
-                                <div class="restaurants__like like">
-                                    <input class="like__checkbox" type="checkbox" id="like_checkbox-1">
-                                    <label class="like__favorite" for="like_checkbox-1" title="Marquer comme favori">
-                                        <img class="like__icon like__icon--empty" src="assets/images/icons/Like-empty.png" alt="icône de coeur vide à cocher">
-                                        <img class="like__icon like__icon--filled" src="assets/images/icons/Like.png" alt="icône de coeur rose cochée">
-                                    </label>
-                                </div>
                             </div>
                             <p class="restaurants__notification">Nouveau</p>
                         </a>
+                        <div class="restaurants__like like">
+                            <input class="like__checkbox" type="checkbox" id="like_checkbox-1">
+                            <label class="like__favorite" for="like_checkbox-1" title="Marquer comme favori">
+                                <img class="like__icon like__icon--empty" src="assets/images/icons/Like-empty.png" alt="icône de coeur vide à cocher">
+                                <img class="like__icon like__icon--filled" src="assets/images/icons/Like.png" alt="icône de coeur rose cochée">
+                            </label>
+                        </div>
                     </article>
                     <article class="restaurants__card">
                         <a href="restaurants/la-note-enchantee.html" target="_self" title="La note enchantée">
@@ -79,16 +77,16 @@
                                     <h3 class="restaurants__name">La note enchantée</h3>
                                     <p class="restaurants__place">Charonne</p>
                                 </div>
-                                <div class="restaurants__like like">
-                                    <input class="like__checkbox" type="checkbox" id="like_checkbox-2">
-                                    <label class="like__favorite" for="like_checkbox-2" title="Marquer comme favori">
-                                        <img class="like__icon like__icon--empty" src="assets/images/icons/Like-empty.png" alt="icône de coeur vide à cocher">
-                                        <img class="like__icon like__icon--filled" src="assets/images/icons/Like.png" alt="icône de coeur rose cochée">
-                                    </label>
-                                </div>
                             </div>
                             <p class="restaurants__notification">Nouveau</p>
                         </a>
+                        <div class="restaurants__like like">
+                            <input class="like__checkbox" type="checkbox" id="like_checkbox-2">
+                            <label class="like__favorite" for="like_checkbox-2" title="Marquer comme favori">
+                                <img class="like__icon like__icon--empty" src="assets/images/icons/Like-empty.png" alt="icône de coeur vide à cocher">
+                                <img class="like__icon like__icon--filled" src="assets/images/icons/Like.png" alt="icône de coeur rose cochée">
+                            </label>
+                        </div>
                     </article>
                     <article class="restaurants__card">
                         <a href="restaurants/a-la-francaise.html" target="_self" title="À la française">
@@ -98,16 +96,16 @@
                                     <h3 class="restaurants__name">À la française</h3>
                                     <p class="restaurants__place">Cité Rouge</p>
                                 </div>
-                                <div class="restaurants__like like">
-                                    <input class="like__checkbox" type="checkbox" id="like_checkbox-3">
-                                    <label class="like__favorite" for="like_checkbox-3" title="Marquer comme favori">
-                                        <img class="like__icon like__icon--empty" src="assets/images/icons/Like-empty.png" alt="icône de coeur vide à cocher">
-                                        <img class="like__icon like__icon--filled" src="assets/images/icons/Like.png" alt="icône de coeur rose cochée">
-                                    </label>
-                                </div>
                             </div>
                             <p class="restaurants__notification--off">Nouveau</p>
                         </a>
+                        <div class="restaurants__like like">
+                            <input class="like__checkbox" type="checkbox" id="like_checkbox-3">
+                            <label class="like__favorite" for="like_checkbox-3" title="Marquer comme favori">
+                                <img class="like__icon like__icon--empty" src="assets/images/icons/Like-empty.png" alt="icône de coeur vide à cocher">
+                                <img class="like__icon like__icon--filled" src="assets/images/icons/Like.png" alt="icône de coeur rose cochée">
+                            </label>
+                        </div>
                     </article>
                     <article class="restaurants__card">
                         <a href="restaurants/le-delice-des-sens.html" target="_self" title="Le délice des sens">
@@ -117,16 +115,16 @@
                                     <h3 class="restaurants__name">Le délice des sens</h3>
                                     <p class="restaurants__place">Folie-Méricourt</p>
                                 </div>
-                                <div class="restaurants__like like">
-                                    <input class="like__checkbox" type="checkbox" id="like_checkbox-4">
-                                    <label class="like__favorite" for="like_checkbox-4" title="Marquer comme favori">
-                                        <img class="like__icon like__icon--empty" src="assets/images/icons/Like-empty.png" alt="icône de coeur vide à cocher">
-                                        <img class="like__icon like__icon--filled" src="assets/images/icons/Like.png" alt="icône de coeur rose cochée">
-                                    </label>
-                                </div>
                             </div>
                             <p class="restaurants__notification--off">Nouveau</p>
                         </a>
+                        <div class="restaurants__like like">
+                            <input class="like__checkbox" type="checkbox" id="like_checkbox-4">
+                            <label class="like__favorite" for="like_checkbox-4" title="Marquer comme favori">
+                                <img class="like__icon like__icon--empty" src="assets/images/icons/Like-empty.png" alt="icône de coeur vide à cocher">
+                                <img class="like__icon like__icon--filled" src="assets/images/icons/Like.png" alt="icône de coeur rose cochée">
+                            </label>
+                        </div>
                     </article>
                 </div>
             </section>
@@ -152,7 +150,7 @@
                     <a href="#" target="_self" title="Mentions légales">Mentions légales</a>
                 </li>
                 <li class="footer__menu-item">
-                    <a  href="mailto: contact@ohmyfood.com" title="Envoyer un mail">Contact</a>
+                    <a href="mailto:contact@ohmyfood.com" title="Envoyer un mail">Contact</a>
                 </li>
             </ul>
         </footer>
