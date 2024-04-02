@@ -69,6 +69,7 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 /* ####### HEADER ####### */
@@ -340,11 +341,6 @@ html, body {
 }
 .restaurant-menu__checkbox:not(:checked) + .restaurant-menu__label .restaurant-menu__info {
   margin-right: -60px;
-}
-@media only screen and (min-width: 768px) {
-  .restaurant-menu__label:hover .restaurant-menu__info {
-    margin-right: 0 !important;
-  }
 }
 
 /* ####### BUTTON ####### */

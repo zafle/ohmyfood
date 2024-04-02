@@ -34,9 +34,11 @@
             margin-right: -60px;
     }
 
-    @media #{$medium-screen} {
-        &__label:hover &__info {
-            margin-right: 0 !important;
-        }
-    }
+    // ######### To enable hover animation on medium-screens and more, uncomment the @media rule below
+
+    // @media #{$medium-screen} {
+    //     &__label:hover &__info {
+    //         margin-right: 0 !important;
+    //     }
+    // }
 }
