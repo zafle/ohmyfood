@@ -383,11 +383,8 @@ html, body {
 .restaurant-menu__info {
   transition: margin-right 300ms ease-out;
 }
-.restaurant-menu__checkbox:checked + .restaurant-menu__content .restaurant-menu__info {
+.restaurant-menu__info.checked {
   margin-right: 0;
-}
-.restaurant-menu__checkbox:not(:checked) + .restaurant-menu__content .restaurant-menu__info {
-  margin-right: -60px;
 }
 
 /* ####### BUTTON ####### */

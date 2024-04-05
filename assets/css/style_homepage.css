@@ -154,8 +154,8 @@ html, body {
 
 /* LOADER ANIMATION */
 body {
-  -webkit-animation: body_anim 3s;
-  animation: body_anim 3s;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .loader {
@@ -168,8 +168,6 @@ body {
   right: 0;
   width: 100vw;
   height: 100vh;
-  -webkit-animation: page-loader__anim 3s forwards;
-  animation: page-loader__anim 3s forwards;
 }
 .loader__container {
   width: 130px;

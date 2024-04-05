@@ -1,20 +1,29 @@
+document.addEventListener("DOMContentLoaded", function() {
 
+    // Hide loader after 3 seconds
 
-$(document).ready(function () {
-
-    $(window).on('load', hideLoader);
-    $('.btn').on('mouseenter', hoverButton);
-
+    // window.addEventListener('load', hideLoader);
+    setTimeout(hideLoader, 3000);
 
     function hideLoader() {
-        $('.loader').hide();
-        $('body').css({
-            'display': 'block',
-            'height': 'unset'
-        });
+        document.querySelector('.loader').style.display='none';
+        document.body.style.height= '100%';
+        document.body.style.overflowY= 'visible';
     }
 
-    function hoverButton() {
-        $(this).toggleClass('hovered');
-    }
+    // dish select animation
+    var dishes = document.querySelectorAll('.restaurant-menu__content');
+
+    dishes.forEach(function(dish) {
+        dish.addEventListener('click', function() {
+            let info = dish.querySelector('.restaurant-menu__info');
+            info.classList.toggle('checked');
+        });
+    });
+
+    //
+
+
+
+
 });

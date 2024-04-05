@@ -34,12 +34,8 @@
         transition: margin-right 300ms ease-out;
     }
 
-    &__checkbox:checked + &__content &__info {
+    &__info.checked {
             margin-right: 0;
-    }
-
-    &__checkbox:not(:checked) + &__content &__info {
-            margin-right: -60px;
     }
 
     // ######### To enable hover animation on medium-screens and more, uncomment the @media rule below

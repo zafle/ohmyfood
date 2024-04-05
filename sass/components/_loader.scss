@@ -1,9 +1,10 @@
 /* LOADER ANIMATION */
 
 // reduce body height to 100vh
+
 body {
-    -webkit-animation: body_anim 3s;
-            animation: body_anim 3s;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .loader {
@@ -17,8 +18,8 @@ body {
     width: 100vw;
     height: 100vh;
     @extend %justify-center;
-    -webkit-animation: page-loader__anim 3s forwards;
-            animation: page-loader__anim 3s forwards;
+    // -webkit-animation: page-loader__anim 3s forwards;
+    //         animation: page-loader__anim 3s forwards;
 
     &__container  {
         @extend %justify-center;
