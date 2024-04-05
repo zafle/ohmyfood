@@ -24,7 +24,6 @@ body {
         @extend %justify-center;
         width: $loader-size-end;
         height: $loader-size-end;
-        overflow: visible;
         -webkit-animation: loader-anim 8s linear 1;
                 animation: loader-anim 8s linear 1;
     }
@@ -37,7 +36,7 @@ body {
     }
 }
 
-@include heart-loader-start-position;
+@include heart-start-position-and-animation;
 @include heart-keyframes;
 
 @-webkit-keyframes loader-anim {
@@ -112,18 +111,14 @@ body {
     0% {
         height: 100vh;
         overflow-y: hidden;
-        position: fixed;
     }
     99% {
         height: 100vh;
         overflow-y: hidden;
-        position: fixed;
-
     }
     100% {
         height: unset;
         overflow-y: visible;
-        position: relative;
     }
 }
 
@@ -131,17 +126,13 @@ body {
     0% {
         height: 100vh;
         overflow-y: hidden;
-        position: fixed;
     }
     99% {
         height: 100vh;
         overflow-y: hidden;
-        position: fixed;
-
     }
     100% {
         height: unset;
         overflow-y: visible;
-        position: relative;
     }
 }

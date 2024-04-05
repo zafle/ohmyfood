@@ -81,8 +81,10 @@
 
 // LOADER
 
-// generate hearts start positions
-@mixin heart-loader-start-position {
+// for each heart generates
+// heart's start position,
+// animation definition with differents names and delays
+@mixin heart-start-position-and-animation {
     @for $i from 1 through 8 {
         .loader__image:nth-of-type(#{$i}) {
             $heart-angle: list.nth($heart-angles, $i);
@@ -93,50 +95,45 @@
     }
 }
 
-// keyframes for hearts animation
-@mixin keyframes($heart-angle, $i) {
-    @-webkit-keyframes anim-heart-#{$i} {
-        0% {
-            transform: translate( calc( cos($heart-angle) *  $heart-position-start), calc( sin($heart-angle) * $heart-position-start) ) rotate(calc( ($i - 1) * 45) * 1deg);
-            opacity: 0;
-        }
-        25% {
-            transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
-        }
-        40% {
-            opacity: 1;
-        }
-        100% {
-            transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
-            opacity: 1;
-            -webkit-animation-timing-function: cubic-bezier(.04,.93,.1,.85);
-                    animation-timing-function: cubic-bezier(.04,.93,.1,.85);
-        }
-    }
-    @keyframes anim-heart-#{$i} {
-        0% {
-            transform: translate( calc( cos($heart-angle) *  $heart-position-start), calc( sin($heart-angle) * $heart-position-start) ) rotate(calc( ($i - 1) * 45) * 1deg);
-            opacity: 0;
-        }
-        25% {
-            transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
-        }
-        40% {
-            opacity: 1;
-        }
-        100% {
-            transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
-            opacity: 1;
-            -webkit-animation-timing-function: cubic-bezier(.04,.93,.1,.85);
-                    animation-timing-function: cubic-bezier(.04,.93,.1,.85);
-        }
-    }
-}
-
 // generate differents keyframes for each heart's loader
 @mixin heart-keyframes {
     @for $i from 1 through 8 {
         $heart-angle: list.nth($heart-angles, $i);
-        @include keyframes($heart-angle, $i);
+        @-webkit-keyframes anim-heart-#{$i} {
+            0% {
+                transform: translate( calc( cos($heart-angle) *  $heart-position-start), calc( sin($heart-angle) * $heart-position-start) ) rotate(calc( ($i - 1) * 45) * 1deg);
+                opacity: 0;
+            }
+            25% {
+                transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
+            }
+            40% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
+                opacity: 1;
+                -webkit-animation-timing-function: cubic-bezier(.04,.93,.1,.85);
+                        animation-timing-function: cubic-bezier(.04,.93,.1,.85);
+            }
+        }
+        @keyframes anim-heart-#{$i} {
+            0% {
+                transform: translate( calc( cos($heart-angle) *  $heart-position-start), calc( sin($heart-angle) * $heart-position-start) ) rotate(calc( ($i - 1) * 45) * 1deg);
+                opacity: 0;
+            }
+            25% {
+                transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
+            }
+            40% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate( calc( cos($heart-angle) *  $heart-position-end), calc( sin($heart-angle) * $heart-position-end) ) rotate(calc( ($i - 1) * 45) * 1deg);
+                opacity: 1;
+                -webkit-animation-timing-function: cubic-bezier(.04,.93,.1,.85);
+                        animation-timing-function: cubic-bezier(.04,.93,.1,.85);
+            }
+        }
     }
 }

@@ -174,7 +174,6 @@ body {
 .loader__container {
   width: 130px;
   height: 130px;
-  overflow: visible;
   -webkit-animation: loader-anim 8s linear 1;
   animation: loader-anim 8s linear 1;
 }
@@ -588,34 +587,28 @@ body {
   0% {
     height: 100vh;
     overflow-y: hidden;
-    position: fixed;
   }
   99% {
     height: 100vh;
     overflow-y: hidden;
-    position: fixed;
   }
   100% {
     height: unset;
     overflow-y: visible;
-    position: relative;
   }
 }
 @keyframes body_anim {
   0% {
     height: 100vh;
     overflow-y: hidden;
-    position: fixed;
   }
   99% {
     height: 100vh;
     overflow-y: hidden;
-    position: fixed;
   }
   100% {
     height: unset;
     overflow-y: visible;
-    position: relative;
   }
 }
 /* ####### BUTTON ####### */
