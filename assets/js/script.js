@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Hide loader after 3 seconds
-
     // window.addEventListener('load', hideLoader);
+
+    // Hide loader after 3 seconds
     setTimeout(hideLoader, 3000);
 
     function hideLoader() {
