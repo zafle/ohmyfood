@@ -25,6 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
             let start, previousTimeStamp;
             let done = false;
 
+            function InOutCubic(t){
+                return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1;
+            };
+
             function infoShow(timeStamp) {
                 if (start === undefined) {
                     start = timeStamp;
@@ -33,7 +37,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 const elapsed = timeStamp - start;
 
                 if (previousTimeStamp !== timeStamp) {
-                    const count = Math.min(0.2 * elapsed, 60);
+                    // with easing ######################################################
+                    const progress = elapsed / 200;
+                    const easing = InOutCubic(progress);
+                    const count = Math.min(0.3 * elapsed * easing, 60);
+
                     if (!info.classList.contains('opened')) {
                         move = -60 + count;
                     } else if (info.classList.contains('opened')) {
@@ -47,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
 
-                if (elapsed < 300) {
+                if (elapsed < 200) {
                     previousTimeStamp = timeStamp;
                     if (!done) {
                         window.requestAnimationFrame(infoShow);
@@ -57,18 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
             window.requestAnimationFrame(infoShow);
         });
-
-
-
     });
-
-    //
-
-
-
-
-
-
-
 
 });
