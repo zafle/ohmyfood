@@ -793,6 +793,7 @@ body {
 }
 .like__favorite {
   position: relative;
+  display: block;
   cursor: pointer;
 }
 .like__icon--filled {
